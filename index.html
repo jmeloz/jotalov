@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pra Isabella</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="js_icon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <div class="hearts"></div>
+
+<header>
+  <div class="logo">Jotao 💖 </div>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Elogios</a>
+    <a href="#">Coisas que admiro</a>
+    <a href="#">Pequenos detalhes</a>
+  </nav>
+  <div class="name">💗 Isabella</div>
+</header>
+
+<section class="hero">
+  <h1>Ei, <span>Isabella</span>...</h1>
+  <h2>só queria te lembrar de algumas coisas <span>incríveis</span>.</h2>
+  <p>Nada muito elaborado, só um cantinho feito com carinho pra te fazer sorrir um pouquinho hoje. 💗</p>
+  <button onclick="mostrarMensagem()">✨ Quero ver</button>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <h3>Você por completa</h3>
+    <p>Você linda parece uma princesa coisa linda demais</p>
+  </div>
+
+  <div class="card">
+    <h3>Sua vibe</h3>
+    <p>Você tem uma vibe única, que é difícil de encontrar.</p>
+  </div>
+
+  <div class="card">
+    <h3>Sua voz linda</h3>
+    <p>sua voz é muito boa de ouvir, absurdamente.</p>
+  </div>
+
+</section>
+
+<section class="extra">
+  <div class="box">
+    <h3>Isabella 💖</h3>
+    <p>Seu nome já é lindo, e combina demais com você. Tem algo leve, especial… e combina com tudo que você é.</p>
+    <p><strong>Isabella, você é incrível ✨</strong></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+<button onclick="iniciarExperiencia()" style="position:fixed; bottom:20px; right:20px; padding:12px 18px; border-radius:25px; border:none; background:#ff4da6; color:#fff; cursor:pointer;">
+  💖 clique aqui
+</button>
+
+<iframe id="player"
+  width="0"
+  height="0"
+  src=""
+  frameborder="0"
+  allow="autoplay">
+</iframe>
+
+<script>
+function iniciarExperiencia() {
+  const iframe = document.getElementById("player");
+  iframe.src += "&autoplay=1";
+  alert("Só fiz isso pra te ver sorrir um pouco 😊");
+}
+</script>
+<audio id="musica" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener("click", function () {
+    const audio = document.getElementById("musica");
+    audio.volume = 0.2; // 🔊 volume baixo
+    audio.play();
+  });
+</script>
+</body>
+</html>
